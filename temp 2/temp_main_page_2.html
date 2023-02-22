@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="temp.js"></script>
+	<title>Restaurant Page</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		header {
+			background-color: #ff6a00;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px;
+		}
+		h1 {
+			margin: 0;
+			font-size: 32px;
+			font-weight: bold;
+		}
+		nav {
+			display: flex;
+			align-items: center;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			margin-left: 20px;
+			font-size: 18px;
+			font-weight: bold;
+			transition: all 0.3s ease-in-out;
+		}
+		nav a:hover {
+			color: #ffdbac;
+		}
+		.cart {
+			display: flex;
+			align-items: center;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.cart p {
+			margin: 0;
+			margin-right: 20px;
+		}
+		.cart button {
+			background-color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-size: 18px;
+			font-weight: bold;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+		}
+		.cart button:hover {
+			background-color: #ffdbac;
+		}
+		.item-list {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 30px;
+			margin: 50px;
+		}
+		.item {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			padding: 20px;
+			border-radius: 5px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+		}
+		.item h3 {
+			margin: 0;
+			font-size: 24px;
+			font-weight: bold;
+		}
+		.item p {
+			margin: 10px 0;
+			font-size: 18px;
+		}
+		.item span {
+			font-size: 24px;
+			font-weight: bold;
+			align-self: flex-end;
+		}
+	</style>
+</head>
+<body>
+	<header>
+<header>
+	<div class="header-content">
+		<h1>Food Delivery</h1>
+		<div class="cart">
+			<p>Total: $0.00</p>
+			<button>View Cart</button>
+		</div>
+	</div>
+	<nav class="tab-nav">
+		<ul>
+			<li class="active"><a href="#">Restaurant 1</a></li>
+			<li><a href="#">Restaurant 2</a></li>
+			<li><a href="#">Restaurant 3</a></li>
+			<li><a href="#">Restaurant 4</a></li>
+			<li><a href="#">Restaurant 5</a></li>
+		</ul>
+	</nav>
+</header>
+
+	</header>
+
+	<div class="item-list">
+		<div class="item">
+			<div>
+				<h3>Item 1</h3>
+				<p>Description of item 1</p>
+			</div>
+			<span>$10.00</span>
+		</div>
+		<div class="item">
+			<div>
+				<h3>Item 2</h3>
+				<p>Description of item 2</p>
+			</div>
+			<span>$8.00</span>
+		</div>
+
+		<div class="item">
+			<div>
+				<h3>Item 3</h3>
+				<p>Description of item 3</p>
+			</div>
+			<span>$12.00</span>
+		</div>
+
+		<div class="item">
+			<div>
+				<h3>Item 4</h3>
+				<p>Description of item 4</p>
+			</div>
+			<span>$6.00</span>
+		</div>
+
+		<div class="item">
+			<div>
+				<h3>Item 5</h3>
+				<p>Description of item 5</p>
+			</div>
+			<span>$15.00</span>
+		</div>
+
+		<div class="item">
+			<div>
+				<h3>Item 6</h3>
+				<p>Description of item 6</p>
+			</div>
+			<span>$9.00</span>
+		</div>
+	</div>
+</body>
+</html>
+
+		

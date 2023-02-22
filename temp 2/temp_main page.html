@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurants</title>
+	<style>
+        body {
+			background-image: url("wallpaper.jpg");
+			background-repeat: repeat;
+			background-size: cover;
+		}
+		header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 15px;
+			background: linear-gradient(to bottom right, #2491d5, #ff9933);;
+			color: rgb(0, 0, 0);
+            border-radius: 9px;  
+            border:solid;
+            border-color: linear-gradient(to bottom left, #2491d5, #ff9933);
+		}
+
+		h1 {
+			margin: 0;
+            font-family: 'Roboto Slab';font-size: 27px;
+			font-weight: normal;
+		}
+
+		.restaurant-list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin: 50px;
+            
+		}
+
+		.restaurant {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 20px;
+			padding: 20px;
+			border: 1px solid #000000;
+			border-radius: 15px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			transition: all 0.3s ease-in-out;
+			cursor: pointer;
+            background:rgba(254, 84, 5, 0.93);
+        
+		}
+
+		.restaurant:hover {
+			transform: translateY(-5px);
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+		}
+
+		.restaurant img {
+			width: 150px;
+			height: 150px;
+			object-fit: cover;
+			border-radius: 50%;
+			margin-bottom: 10px;
+		}
+
+		.restaurant h2 {
+			margin: 0;
+			font-size: 18px;
+			font-weight: normal;
+			text-align: center;
+		}
+	</style>
+<body>
+	<header>
+		<h1>CAMPUS DELIVERY SERVICE</h1>
+		<div>
+			<p>Total: $0.00</p>
+			<button style= background-color:#ea7f21da><i>View Cart</i></button>
+		</div>
+	</header>
+
+	<div class="restaurant-list">
+        <a href="Restaurant1.html" style="color: #000000;">
+            <div class="restaurant">
+              <img src="angod.jpg" alt="Restaurant Logo">
+              <h2>Item 1</h2>
+            </div>
+          </a>
+          
+
+		<div class="restaurant">
+            <a href="Restaurant2.html" style="color: #000000;">
+			<img src="john.jpg" alt="Restaurant Logo">
+			<h2>Item 2</h2>
+            </a>
+		</div>
+
+		<div class="restaurant">
+            <a href="Restaurant3.html" style="color: #000000;">
+			<img src="vtt.jpg" alt="Restaurant Logo">
+			<h2>Item 3</h2>
+            </a>
+		</div>
+
+		<div class="restaurant">
+            <a href="Restaurant4.html" style="color: #000000;">
+			<img src="jehan.jpg" alt="Restaurant Logo">
+			<h2>Item 4</h2>
+            </a>
+		</div>
+        
+		<div class="restaurant">
+            <a href="Restaurant5.html" style="color: black;">    
+			<img src="rayan.jpg" alt="Restaurant Logo">
+			<h2>Item 5</h2>
+		</div>
+	</div>
+</body>
+</html>
+
