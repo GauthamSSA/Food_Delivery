@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #006699;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+}
+
+h1 {
+	font-size: 48px;
+	margin-top: 150px;
+}
+
+.buttons {
+	margin-top: 50px;
+}
+
+a {
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 24px;
+	color: #fff;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+.login-button {
+	background-color: #1A5276;
+}
+
+.signup-button {
+	background-color: #2980B9;
+}

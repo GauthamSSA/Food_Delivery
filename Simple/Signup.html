@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Sign Up</h1>
+		<form action="signup.php" method="post">
+			<label for="username">Username:</label><br>
+			<input type="text" id="username" name="username"><br>
+			<label for="email">Email:</label><br>
+			<input type="email" id="email" name="email"><br>
+			<label for="password">Password:</label><br>
+			<input type="password" id="password" name="password"><br>
+			<input type="submit" value="Sign Up">
+		</form>
+		<?php if (isset($_GET['signup']) && $_GET['signup'] == 'failed'): ?>
+			<p class="error">An error occurred. Please try again later.</p>
+		<?php endif; ?>
+		<?php if (isset($_GET['signup']) && $_GET['signup'] == 'success'): ?>
+			<p class="success">Sign up successful. Please log in.</p>
+		<?php endif; ?>
+	</div>
+</body>
+</html>
