@@ -64,29 +64,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<div class="container">
-		<h1>Login</h1>
-		<?php
-			if (isset($_SESSION['error'])) {
-				echo '<div class="error">' . $_SESSION['error'] . '</div>';
-				unset($_SESSION['error']);
-			}
-		?>
-		<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
-			<label for="email">Email</label>
-			<input type="email" name="email" id="email" required>
-			<label for="password">Password</label>
-			<input type="password" name="password" id="password" required>
-			<button type="submit">Log in</button>
-		</form>
-		<p>Don't have an account? <a href="signup_form.html">Sign up</a></p>
-	</div>
-</body>
-</html>
