@@ -25,11 +25,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$_SESSION['error'] = 'Username is required';
 		header('Location: signup_form.html');
 		exit;
-	} else if (empty($email)) {
+	} 
+	else{
+		
+		$_SESSION["username"]=$username;
+	}
+	 if (empty($email)) {
 		$_SESSION['error'] = 'Email is required';
 		header('Location: signup_form.html');
 		exit;
-	} else if (empty($password)) {
+	} 
+	
+	if (empty($password)) {
 		$_SESSION['error'] = 'Password is required';
 		header('Location: signup_form.html');
 		exit;
@@ -68,33 +75,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<!-- HTML code for signup_form.html -->
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Sign Up</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<div class="container">
-		<h1>Sign Up</h1>
-		<?php
-			if (isset($_SESSION['error'])) {
-				echo '<div class="error">' . $_SESSION['error'] . '</div>';
-				unset($_SESSION['error']);
-			}
-		?>
-		<form method="POST" action="signup.php">
-			<label>Username:</label>
-			<input type="text" name="username" required><br>
-			<label>Email:</label>
-			<input type="email" name="email" required><br>
-			<label>Password:</label>
-			<input type="password" name="password" required><br>
-			<input type="submit" value="Sign Up">
-		</form>
-		<p>Already have an account? <a href="login_form.html">Log in</a></p>
-	</div>
-</body>
-</html>
+
